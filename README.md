@@ -20,6 +20,7 @@ Proposal to register the email-adresses of the horeca-customers, respecting both
 **1. A database, where all the personal data stored are encrypted with the public part of an asymetrical key.** Thereby, it is unexploitable if it is compromised.
 
 **2. A QR code** - the QR code contains/points to the public encryption key
+under the QRcode, a tiny url for those who do not have a QR-code reader
 
 - **The customer scans the QR code. A web page opens. The customer types his/her email adress**
 - On the first use, he/she confirms by clicking on a link in an email (may be done when he/she is back home)
@@ -38,9 +39,7 @@ For the place owners who does't trust it (and no one should), despite the encryp
 - The database can be hosted on a classical/virtual server, a Raspberry Pi, or any cloud storage service like Dropbox or Google Drive
 - The customer can also register him/herself from home
 - Let's find a way to make it fun!
-- Later: if the place owner
-- + tard : si l'exploitant dispose déjà d'une partie des données (ex: via une réservation), les données pourraient être reçues au moyen d'une API (push ou pull)
-- Trouver une manière de le rendre ludique
+- Later: an API to retrieve data from other systems (eg: reservation systems)
 
 **Alternative**
 A service that is not managed by the place owners. 
