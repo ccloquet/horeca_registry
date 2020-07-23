@@ -1,5 +1,5 @@
-# horeca_registry
-Proposal to register the email adresses of the horeca-customers with privacy by design
+# HorecaRegistry
+Proposal to register the email-adresses of the horeca-customers with privacy by design
 
 **Fonctionnement pour le client :**
  1. Scanner le QR-code
