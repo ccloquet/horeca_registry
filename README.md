@@ -1,5 +1,5 @@
 # HorecaRegistry
-Proposal to register the email-adresses of the horeca-customers, respecting both the privacy of the customers and the discretion of the place owner
+Proposal to register the email-adresses of the horeca-customers, in a pragmatic way, while respecting both the privacy of the customers and the discretion of the place owner
 
 **For the customer:**
  1. Scan the QR-code
@@ -48,4 +48,3 @@ For the place owners who does't trust it (and no one should), despite the encryp
 A service that is not managed by the place owners. 
 Through a web app (or later, the tracing app), everyone can post there his/her email adress + the place where he/she went.
 Everything is stored encrypted (like above)
-
