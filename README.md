@@ -1,22 +1,22 @@
 # HorecaRegistry
 Proposal to register the email-adresses of the horeca-customers with privacy by design
 
-**Fonctionnement pour le client :**
- 1. Scanner le QR-code
- 2. Encoder son adresse email
- 3. Confirmer
+**For the customer:**
+ 1. Scan the QR-code
+ 2. Type his/her email adress
+ 3. Confirm
 
-**Garantie de sécurité**
- 1. les données sont stockées chiffrées et décodables seulement avec une clé, qui serait partagée entre l'exploitant.e et le centre de tracing
- 2. s'il/elle le souhaite, l'exploitant.e peut installer l'application sur un serveur privé
+**Security guarantees**
+ 1. the data are stored encrypted, and are solely decryptable with a private key, that could be shared between the place owner and the tracing centre
+ 2. the owner can also install the app on a private server
 
 
 ----------------------------------------------------------
 
 
-**_En détail :_*
+**_In detail_**
 
-**1. Une base de données, avec chiffrement de bout en bout à clé asymétrique.** De la sorte, elle est inexploitable si elle est compromise.
+**1. A database Une base de données, avec chiffrement de bout en bout à clé asymétrique.** De la sorte, elle est inexploitable si elle est compromise.
 
 **2. Un QR code** - le QR code contient une clé de chiffrement 
 
@@ -36,6 +36,7 @@ Pour tous ceux qui n'ont pas confiance en cette solution malgré le chiffrement 
 - La base de données peut être hébergée sur un serveur classique ou virtuel, sur un Raspberry Pi ou sur service de stockage de type Dropbox ou Google Drive
 - Le client peut aussi s'enregistrer depuis la maison
 - + tard : si l'exploitant dispose déjà d'une partie des données (ex: via une réservation), les données pourraient être reçues au moyen d'une API (push ou pull)
+- Trouver une manière de le rendre ludique
 
 Si on s'y met, il y en a pour quelques jours de travail. Les défis sont humains, pas tellement techniques.
 
