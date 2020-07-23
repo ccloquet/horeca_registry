@@ -11,6 +11,9 @@ Proposal to register the email-adresses of the horeca-customers, respecting both
  2. the owner can also install the app on a private server
  3. random data are added so that it is not possible to infer the frequentation of the place from the encrypted data
 
+There is for a couple of days of work. 
+
+What could be wrong with this approach?
 
 ----------------------------------------------------------
 
@@ -24,7 +27,7 @@ under the QRcode, a tiny url for those who do not have a QR-code reader
 
 - **The customer scans the QR code. A web page opens. The customer types his/her email adress**
 - On the first use, he/she confirms by clicking on a link in an email (may be done when he/she is back home)
-- The database records the email + a timestamp (both encrypted), and the day (unencrypted)
+- The database records the place id + customer email + a timestamp (both salted/encrypted), and the day (unencrypted)
 - A daily script wipes everything dating back from more than 14 days
 - Random data is added continuously, so that no information can be inferred about the frequentation of the place from the encrypted data
 - The private (decryption) key can be cut in two : a part for the place owner and a part for the tracing center. Thereby, none of them can exploit the data alone.
@@ -46,6 +49,3 @@ A service that is not managed by the place owners.
 Through a web app (or later, the tracing app), everyone can post there his/her email adress + the place where he/she went.
 Everything is stored encrypted (like above)
 
-There is for a couple of days of work. 
-
-What could be wrong with this approach?
