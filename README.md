@@ -1,5 +1,5 @@
 # HorecaRegistry
-Proposal to register the email-adresses of the horeca-customers with privacy by design
+Proposal to register the email-adresses of the horeca-customers, respecting both the privacy of the customers and the discretion of the place owner
 
 **For the customer:**
  1. Scan the QR-code
@@ -9,6 +9,7 @@ Proposal to register the email-adresses of the horeca-customers with privacy by 
 **Security guarantees**
  1. the data are stored encrypted, and are solely decryptable with a private key, that could be shared between the place owner and the tracing centre
  2. the owner can also install the app on a private server
+ 3. random data are added so that it is not possible to infer the frequentation of the place from the encrypted data
 
 
 ----------------------------------------------------------
@@ -16,28 +17,36 @@ Proposal to register the email-adresses of the horeca-customers with privacy by 
 
 **_In detail_**
 
-**1. A database Une base de données, avec chiffrement de bout en bout à clé asymétrique.** De la sorte, elle est inexploitable si elle est compromise.
+**1. A database, where all the personal data stored are encrypted with the public part of an asymetrical key.** Thereby, it is unexploitable if it is compromised.
 
-**2. Un QR code** - le QR code contient une clé de chiffrement 
+**2. A QR code** - the QR code contains/points to the public encryption key
 
-- **Le/la client.e scanne le QR code, ce qui ouvre une page web. Il/elle introduit son email**
-- À la premiière utilisation, il/elle confirme via un lien (éventuellement à son retour à la maison)
-- La base de données enregistre l'email + l'heure (chiffrés), ainsi que le jour (non chiffré)
-- Un script quotidien efface tout ce qui date d'il y a plus de 14 jours 
+- **The customer scans the QR code. A web page opens. The customer types his/her email adress**
+- On the first use, he/she confirms by clicking on a link in an email (may be done when he/she is back home)
+- The database records the email + a timestamp (both encrypted), and the day (unencrypted)
+- A daily script wipes everything dating back from more than 14 days
+- Random data is added continuously, so that no information can be inferred about the frequentation of the place from the encrypted data
+- The private (decryption) key can be cut in two : a part for the place owner and a part for the tracing center. Thereby, none of them can exploit the data alone.
+- If no QR code is available, the customer can still register, but would have to enter the details manually
 
-- La clé de déchiffrement peut être scindée en deux : une partie pour l'exploitant et une partie pour le centre de tracing. De la sorte, aucun des deux ne peux exploiter les données de manière arbitraire.
+**3. The code in open source**
+A centralized solution would be offered.
+For the place owners who does't trust it (and no one should), despite the encryption and the possibility to audit the infrastructure, the code would be available in open source. Thereby, anyone can deploy and run it by him/herself (on a Raspberry pi, an OVH server, Heroku, ...)
 
-**3. Le code en open source**
-Une solution centralisée serait offerte.
-Pour tous ceux qui n'ont pas confiance en cette solution malgré le chiffrement de bout en bout et la possibilité d'auditer l'infrastructure, le code serait disponible en open-source. De la sorte, chacun.e peut installer le programme par soi-même (sur un Raspberry Pi, un serveur OVH, Amazon, Heroku, ...)
-
-**Autres notes**
-- Le moteur peut être PostgreSQL, SQLite, voire un simple fichier texte
-- La base de données peut être hébergée sur un serveur classique ou virtuel, sur un Raspberry Pi ou sur service de stockage de type Dropbox ou Google Drive
-- Le client peut aussi s'enregistrer depuis la maison
+**Additional notes**
+- The database engine can be PostgreSQL, SQLite, or even a simple text file
+- The database can be hosted on a classical/virtual server, a Raspberry Pi, or any cloud storage service like Dropbox or Google Drive
+- The customer can also register him/herself from home
+- Let's find a way to make it fun!
+- Later: if the place owner
 - + tard : si l'exploitant dispose déjà d'une partie des données (ex: via une réservation), les données pourraient être reçues au moyen d'une API (push ou pull)
 - Trouver une manière de le rendre ludique
 
-Si on s'y met, il y en a pour quelques jours de travail. Les défis sont humains, pas tellement techniques.
+**Alternative**
+A service that is not managed by the place owners. 
+Through a web app (or later, the tracing app), everyone can post there his/her email adress + the place where he/she went.
+Everything is stored encrypted (like above)
 
-Qu'est-ce qui pourrait coincer avec cette approche ?
+There is for a couple of days of work. 
+
+What could be wrong with this approach?
