@@ -22,7 +22,7 @@ Proposal to register the email-adresses of the horeca-customers with privacy by 
 
 - **Le/la client.e scanne le QR code, ce qui ouvre une page web. Il/elle introduit son email**
 - À la premiière utilisation, il/elle confirme via un lien (éventuellement à son retour à la maison)
-- La base de données enregistre l'email + l'heure, chiffrés, ainsi que le jour (non chiffré)
+- La base de données enregistre l'email + l'heure (chiffrés), ainsi que le jour (non chiffré)
 - Un script quotidien efface tout ce qui date d'il y a plus de 14 jours 
 
 - La clé de déchiffrement peut être scindée en deux : une partie pour l'exploitant et une partie pour le centre de tracing. De la sorte, aucun des deux ne peux exploiter les données de manière arbitraire.
