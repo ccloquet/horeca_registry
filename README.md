@@ -7,7 +7,7 @@ Proposal to register the email-adresses of the horeca-customers, respecting both
  3. Confirm
 
 **Security guarantees**
- 1. the data are stored encrypted, and are solely decryptable with a private key, that could be shared between the place owner and the tracing centre
+ 1. the data are stored encrypted, and are solely decryptable with a private key, that could be split between the place owner and the tracing centre
  2. the owner can also install the app on a private server
  3. random data are added so that it is not possible to infer the frequentation of the place from the encrypted data
 
