@@ -34,5 +34,8 @@ Pour tous ceux qui n'ont pas confiance en cette solution malgré le chiffrement 
 **Autres notes**
 - Le moteur peut être PostgreSQL, SQLite, voire un simple fichier texte
 - La base de données peut être hébergée sur un serveur classique ou virtuel, sur un Raspberry Pi ou sur service de stockage de type Dropbox ou Google Drive
+- Le client peut aussi s'enregistrer depuis la maison
+- + tard : si l'exploitant dispose déjà d'une partie des données (ex: via une réservation), les données pourraient être reçues au moyen d'une API (push ou pull)
+
 
 Qu'est-ce qui pourrait coincer avec cette approche ?
