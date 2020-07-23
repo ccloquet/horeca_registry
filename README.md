@@ -37,5 +37,6 @@ Pour tous ceux qui n'ont pas confiance en cette solution malgré le chiffrement 
 - Le client peut aussi s'enregistrer depuis la maison
 - + tard : si l'exploitant dispose déjà d'une partie des données (ex: via une réservation), les données pourraient être reçues au moyen d'une API (push ou pull)
 
+Si on s'y met, il y en a pour quelques jours de travail. Les défis sont humains, pas tellement techniques.
 
 Qu'est-ce qui pourrait coincer avec cette approche ?
