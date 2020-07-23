@@ -7,9 +7,9 @@ Proposal to register the email-adresses of the horeca-customers, in a pragmatic 
  3. Confirm
 
 **Security guarantees**
- 1. the data are stored encrypted, and are solely decryptable with a private key, that could be split between the place owner and the tracing centre
+ 1. the data is stored encrypted, and is solely decryptable with a private key, that could be split between the place owner and the tracing centre
  2. the owner can also install the app on a private server
- 3. random data are added so that it is not possible to infer the frequentation of the place from the encrypted data
+ 3. random data is added so that it is not possible to infer the frequentation of the place from the encrypted data
 
 There is for a couple of days of work. 
 
@@ -20,7 +20,7 @@ What could be wrong with this approach?
 
 **_In detail_**
 
-**1. A database, where all the personal data stored are encrypted with the public part of an asymetrical key.** Thereby, it is unexploitable if it is compromised.
+**1. A database, where all the personal data stored is encrypted with the public part of an asymetrical key.** Thereby, it is unexploitable if it is compromised.
 
 **2. A QR code** - the QR code contains/points to the public encryption key
 under the QRcode, a tiny url for those who do not have a QR-code reader
@@ -30,7 +30,7 @@ under the QRcode, a tiny url for those who do not have a QR-code reader
 - The database records the place id + customer email + a timestamp (both salted/encrypted), and the day (unencrypted)
 - A daily script wipes everything dating back from more than 14 days
 - Random data is added continuously, so that no information can be inferred about the frequentation of the place from the encrypted data
-- The private (decryption) key can be cut in two : a part for the place owner and a part for the tracing center. Thereby, none of them can exploit the data alone.
+- The private (decryption) key can be split in two : a part for the place owner and a part for the tracing center. Thereby, none of them can exploit the data alone (alternative: the data is encrypted twice: one with the tracing center key, then with the place owner's key)
 - If no QR code is available, the customer can still register, but would have to enter the details manually
 
 **3. The code in open source**
