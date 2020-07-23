@@ -45,6 +45,6 @@ For the place owners who does't trust it (and no one should), despite the encryp
 - Later: an API to retrieve data from other systems (eg: reservation systems)
 
 **Alternative**
-A service that is not managed by the place owners. 
-Through a web app (or later, the tracing app), everyone can post there his/her email adress + the place where he/she went.
-Everything is stored encrypted (like above)
+- in the stop-covid app, add an option "check-in"
+- it does not need the precise place name, just the location
+- the stop covid app does the maths, stores the data on the smartphone, and when the tracing centre wants to warn the visitors of a particular place around a particular time, it just sends a hash of the location/time to the apps. It also sends periodically false hashs so that no one can infer anything about the epidemics/places if he/she does not need to.
