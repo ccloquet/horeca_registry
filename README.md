@@ -1,15 +1,23 @@
 # HorecaRegistry
 Proposal to register the email-adresses of the horeca-customers, in a pragmatic way, while respecting both the privacy of the customers and the discretion of the place owner
 
+_Benefits:_
+  - for the customer: **easy** to use, the contact details must be entered only once. **Trust** through encryption and transparency, no data is shared with the government or with third parties, code is open-source
+  - for the place owner: **effortless + trust**: the contacts are deleted automatically, no inference about the place frequentation can be made
+  - for the tracing centre: electronic data can be **queried faster** than paper (
+
+_How it works:_
+
 **For the customer:**
  1. Scan the QR-code
- 2. Type his/her email adress
+ 2. Type his/her contact data
  3. Confirm
 
 **Security guarantees**
- 1. the data is stored encrypted, and is solely decryptable with a private key, that could be split between the place owner and the tracing centre
+ 1. the data is stored encrypted, and is **solely decryptable with a private key**, that could be split between the place owner and the tracing centre
  2. the owner can also install the app on a private server
- 3. random data is added so that it is not possible to infer the frequentation of the place from the encrypted data
+ 3. random data is added so that **it is not possible to infer the frequentation of the place from the encrypted data**
+
 
 There is for a couple of days of work. 
 
