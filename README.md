@@ -3,8 +3,8 @@ Proposal to register the email-adresses of the horeca-customers, in a pragmatic 
 
 _Benefits:_
   - for the customer: **easy** to use, the contact details must be entered only once. **Trust** through encryption and transparency, no data is shared with the government or with third parties, code is open-source
-  - for the place owner: **effortless + trust**: the contacts are deleted automatically, no inference about the place frequentation can be made
-  - for the tracing centre: electronic data can be **queried faster** than paper (
+  - for the place owner: **effortless + trust**, the contacts are deleted automatically, no inference about the place frequentation can be made
+  - for the tracing centre: electronic data can be **queried faster** than paper
 
 _How it works:_
 
